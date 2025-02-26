@@ -7,7 +7,13 @@
     <title>Hola Mundo</title>
 </head>
 <body>
-    <div id="myApp"></div>
+    <div id="myApp">
+        <h3>{{author}}</h3>
+        <h5>{{message}}</h5>
+
+        <!-- Mandamos changeQuote como reference-->
+        <button v-on:click="changeQuote">Cambiar mensaje</button>
+    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
